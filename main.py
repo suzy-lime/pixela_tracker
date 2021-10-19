@@ -4,8 +4,8 @@ import os
 
 # CONSTANTS
 pixela_endpoint = "https://pixe.la/v1/users"
-USERNAME = "grandgrannylime"
-PIX_TOKEN = "9osu9d8in2nksjhd983u9j"
+USERNAME = os.environ.get("PIXELA_USER")
+PIX_TOKEN = os.environ.get("PIXELA_TOKEN")
 GRAPH_ID = "graph1"
 
 user_params = {
